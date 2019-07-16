@@ -38,9 +38,9 @@ div.cs-skin-slide::before {
 
 .cs-skin-slide > span::after,
 .cs-skin-slide.cs-active > span::after {
-	font-family: 'icomoon';
+	font-family: 'Remix';
 	font-size: 32px;
-	content: '\e941';
+	content: '\e91c';
 	color: #16C4CF;
 	backface-visibility: hidden;
 }
