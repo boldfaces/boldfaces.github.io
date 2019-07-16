@@ -1,0 +1,11 @@
+/* width */::-webkit-scrollbar {width: 12px;}
+/* Track */::-webkit-scrollbar-track {background: #FAFAFA;}
+/* Handle */::-webkit-scrollbar-thumb {background: #16c4cf;}
+/* Handle on hover */::-webkit-scrollbar-thumb:hover {background: #000;}
+ 
+.ui-datepicker { margin-left: 24px!important; }
+.ui-widget-header { border: none!important; background: none!important; }
+.ui-widget.ui-widget-content,.ui-widget-content { border: none!important; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { border: none!important; }
+.ui-datepicker td span, .ui-datepicker td a { text-align: center!important; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { background: #3f2a56!important; color: #fff!important; }
