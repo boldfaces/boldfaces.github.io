@@ -148,15 +148,15 @@ $("#bookNow").click(function() {
 					params["input_hours"] = "";
 					
 					break;
-					case "10349" : 
-					params["type"] = "arrival";
-					params["input_location_id"] = "10349";
-					params["input_service_id"] = "CAT68";
-					params["input_location"] = "Meet%20and%20Greet%20Service";
-					params["input_services"] = "Porterage%20Service%20%2d%20Bronze";
-					params["input_hours"] = "";
+					// case "10349" : 
+					// params["type"] = "arrival";
+					// params["input_location_id"] = "10349";
+					// params["input_service_id"] = "CAT68";
+					// params["input_location"] = "Meet%20and%20Greet%20Service";
+					// params["input_services"] = "Porterage%20Service%20%2d%20Bronze";
+					// params["input_hours"] = "";
 					
-					break;
+					// break;
 				}
 			}
 			else if(item == "date")
@@ -173,12 +173,12 @@ $("#bookNow").click(function() {
 		}	
 		var paramUrl = "?" + selections.join("&");
 	}
-	if($('#location').val() == "dallas")
-	{
+	if($('#location').val() == "dallas"){
 		window.location.href = "https://www.allwaysvip.com/dfw-booking";
+	}else if($('#location').val() == "10349"){
+		window.location.href = "https://www.allwaysvip.com/jfk-booking";
 	}else{
-
-	window.location.href = baseUrl + paramUrl;
+		window.location.href = baseUrl + paramUrl;
 	}
   });
 //BOOKER DEEPLINKING END
