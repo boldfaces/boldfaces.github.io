@@ -104,6 +104,8 @@ $('#date').bind('blur', function(){
 });
 //DATE POPUP BG END
 
+
+
 //BOOKER DEEPLINKING START
 $("#bookNow").click(function() {
 	var baseUrl = "https://booking.allwaysvip.com/booking";
@@ -177,6 +179,8 @@ $("#bookNow").click(function() {
 		window.location.href = "https://www.allwaysvip.com/dfw-booking";
 	}else if($('#location').val() == "10349"){
 		window.location.href = "https://www.allwaysvip.com/jfk-booking";
+	}else if($('#location').val() == ""){
+		window.location.href = "";
 	}else{
 		window.location.href = baseUrl + paramUrl;
 	}
