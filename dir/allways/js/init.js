@@ -178,7 +178,7 @@ $("#bookNow").click(function() {
 	}else if($('#location').val() == "10349"){
 		window.location.href = "https://www.allwaysvip.com/jfk-booking";
 	}else{
-		//window.location.href = baseUrl + paramUrl;
+		window.location.href = baseUrl + paramUrl;
 	}
   });
 //BOOKER DEEPLINKING END
