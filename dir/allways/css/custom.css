@@ -8,7 +8,7 @@
 .a-hero-span.xa-section:before {top: 0;left: -32px;right: 72%;}
 
 .a-service-data ul li {position: relative;}
-.a-service-data ul li:before {content: "";position: absolute;left: -16px;top: 6px;width: 12px;height: 12px;background-color: #3F2A56;}
+.a-service-data ul li:before {content: "";position: absolute;left: -24px;top: 8px;width: 8px;height: 8px;background-color: #3F2A56; border-radius: 50px;}
 
 iframe { width: 1px;min-width: 100%;min-height: 1380px;border: 0; }
 @media only screen and (max-width: 1600px) {
