@@ -18,7 +18,7 @@ div.cs-skin-slide::before {
 .cs-options > ul > li:first-child { display: none; }
 
 .cs-skin-slide.cs-active::before {
-	transform: scale3d(1,4,1);
+	transform: scale3d(1,7,1);
 	box-shadow: 0 8px 16px 0 rgba(38, 34, 41, .24);
 }
 .cs-loc.cs-skin-slide.cs-active::before {
@@ -94,7 +94,7 @@ div.cs-skin-slide::before {
 	font-weight: 500;
 	letter-spacing: 2px;
 	font-size: 64%;
-	padding: 6px 0;
+	padding: 4px 0;
 }
 
 .cs-skin-slide .cs-options li span:hover,
