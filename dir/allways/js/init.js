@@ -85,12 +85,6 @@ $('#slider-text').slick({
 });
 // CUSTOM SLIDER END
 
-// CLEAVE JS START
-var cleave = new Cleave('#date', {
-    date: true
-});
-// CELAVE JS END
-
 //DATE POPUP BG START
 $('#date').bind('focus', function(){
 	$(this).addClass("xa-active");
