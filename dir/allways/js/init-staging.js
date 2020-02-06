@@ -113,9 +113,9 @@ $("#bookNow").click(function() {
 	}else if($('#location').val() == "cebu"){
 		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + date;
 	}else if($('#location').val() == ""){
-		
+		alert("goes here");
 	}else{
-		
+		alert("shit went south");
 	}
   });
 //BOOKER DEEPLINKING END
