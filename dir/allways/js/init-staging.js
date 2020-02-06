@@ -158,7 +158,7 @@ $("#bookNow").click(function() {
 			else if(item == "date")
 			{
 				newParams = "input_date";
-				newValue = moment(newValue, "MM/DD/YYYY").format("DD-MMM-YYYY");
+				newValue = moment(newValue, "DD-MMM-YYYY").format("YYYY-MM-DD");
 				params[newParams] = newValue;
 			}
 		}
