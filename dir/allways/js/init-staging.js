@@ -107,11 +107,11 @@ $("#bookNow").click(function() {
 	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
 
 	if($('#location').val() == "dallas"){
-		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + date;
+		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
 	}else if($('#location').val() == "10349"){
-		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + date;
+		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
 	}else if($('#location').val() == "cebu"){
-		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + date;
+		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
 	}else if($('#location').val() == ""){
 		alert("goes here");
 	}else{
