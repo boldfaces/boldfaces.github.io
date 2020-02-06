@@ -104,7 +104,7 @@ $('#date').bind('blur', function(){
 $("#bookNow").click(function() {
 	var loc = $("#location").val();
 	var date = $("#date").val();
-	//var dateFormatted = moment(date).format('YYYY-MM-DD');
+	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
 
 	if($('#location').val() == "dallas"){
 		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + date;
