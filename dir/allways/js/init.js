@@ -98,7 +98,7 @@ $('#date').bind('blur', function(){
 });
 //DATE POPUP BG END
 
-
+$('#date').datepicker();
 
 //BOOKER DEEPLINKING START
 $("#bookNow").click(function() {
