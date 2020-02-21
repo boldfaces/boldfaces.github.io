@@ -98,7 +98,7 @@ $('#date').bind('blur', function(){
 });
 //DATE POPUP BG END
 
-
+$('#date').datepicker({ dateFormat: 'dd-M-yy' });
 
 //BOOKER DEEPLINKING START
 $("#bookNow").click(function() {
