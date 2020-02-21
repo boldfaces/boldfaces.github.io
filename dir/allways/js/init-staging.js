@@ -96,6 +96,7 @@ $('#date').bind('blur', function(){
 	$('.a-booker-overlay').addClass("xa-hide");
 	$('.a-booker-label').addClass("xa-hide");
 });
+$('#date').datepicker({ dateFormat: 'dd-M-yy' });
 //DATE POPUP BG END
 
 //BOOKER DEEPLINKING START
