@@ -47,5 +47,5 @@ iframe { width: 1px;min-width: 100%;min-height: 1380px;border: 0; }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { background: #3f2a56!important; color: #fff!important; }
 
 .a-service-data ul li {position: relative;}
-.a-richtext > ul > li::before, .a-service-data ul li:before, .a-cancel-richtext ul li::before { content: ' ';position: absolute;top: 10px;left: -24px;width: 4px;height: 4px;background: #3f2a56;border-radius: 10px; }
+.a-richtext ul li::before, .a-service-data ul li:before, .a-cancel-richtext ul li::before { content: ' ';position: absolute;top: 10px;left: -24px;width: 4px;height: 4px;background: #3f2a56;border-radius: 10px; }
 table { margin-bottom: 32px; }
