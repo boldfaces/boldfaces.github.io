@@ -101,7 +101,7 @@ $('#date').bind('blur', function(){
 $('#date').datepicker();
 
 $("#bookNow,#closeStopModal").click(function() {
-	$('#stopModal').removeClass("xa-hide");
+	$("#stopModal").toggleClass("xa-hide");
 });
 
 //BOOKER DEEPLINKING START
