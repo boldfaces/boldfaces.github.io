@@ -101,13 +101,7 @@ $('#date').bind('blur', function(){
 $('#date').datepicker();
 
 $("#bookNow,#closeStopModal").click(function() {
-	if($('#location').val() == "dallas"){
-		window.location.href = "https://www.allwaysvip.com/dfw-booking";
-	}else if($('#location').val() == ""){
-				
-	}else{
-		
-	}
+	$("#stopModal").toggleClass("xa-hide");
 });
 
 //BOOKER DEEPLINKING START
