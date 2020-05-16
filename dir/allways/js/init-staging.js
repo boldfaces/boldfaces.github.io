@@ -132,9 +132,9 @@ $("#bookNow,#closeStopModal").click(function() {
 // 	if($('#location').val() != "" && $('#date').val() != ""){
 // 		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
 // 	}else if($('#location').val() == ""){
-// 		alert("Booking information insufficient, please specify a Date.");
+//		alert("Booking information insufficient, please specify a Location.");
 // 	}else{
-// 		alert("Booking information insufficient, please specify a Location.");
+// 		alert("Booking information insufficient, please specify a Date.");
 // 	}
 // });
 //BOOKER DEEPLINKING END
