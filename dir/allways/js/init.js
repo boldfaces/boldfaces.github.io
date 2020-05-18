@@ -98,10 +98,18 @@ $('#date').bind('blur', function(){
 });
 //DATE POPUP BG END
 
-$('#date').datepicker();
+$('#date').datepicker({
+	minDate: -1
+});
 
 $("#bookNow,#closeStopModal").click(function() {
-	$("#stopModal").toggleClass("xa-hide");
+	if($('#location').val() == "dallas"){
+		window.location.href = "https://www.allwaysvip.com/dfw-booking";
+	}else if($('#location').val() == ""){
+				
+	}else{
+		
+	}
 });
 
 //BOOKER DEEPLINKING START
