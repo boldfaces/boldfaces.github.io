@@ -102,86 +102,85 @@ $('#date').datepicker({
 	minDate: -1
 });
 
-$("#bookNow,#closeStopModal").click(function() {
-	if($('#location').val() == "dallas"){
-		window.location.href = "https://www.allwaysvip.com/dfw-booking";
-	}else if($('#location').val() == ""){
-				
-	}else{
-		
-	}
-});
-
-//BOOKER DEEPLINKING START
-// $("#bookNow").click(function() {
-// 	var baseUrl = "https://booking.allwaysvip.com/booking";
-// 	var params = {};
-// 	var selections = [];
-// 	var paramUrl = "";
-// 	var ids = ["date", "type", "location", "City", "input_location_id", "input_service_id", "input_location", "input_services"]
-// 	jQuery.each(ids, function(index, item) {
-// 		if($('#' + item).val() != "" && $('#' + item).length > 0)
-// 		{
-// 			var newParams = item;
-// 			var newValue = $('#' + item).val();
-			
-// 			if(item == "location")
-// 			{
-// 				switch(newValue)
-// 				{
-// 					case "10211" : 
-// 					params["type"] = "arrival";
-// 					params["input_location_id"] = "10211";
-// 					params["input_service_id"] = "CAT64";
-// 					params["input_location"] = "Meet%20and%20Greet%20Service";
-// 					params["input_services"] = "Gold";
-// 					params["input_hours"] = "";
-					
-// 					break;
-// 					case "10194" : 
-// 					params["type"] = "arrival";
-// 					params["input_location_id"] = "10194";
-// 					params["input_service_id"] = "CAT56";
-// 					params["input_location"] = "Guest%20Service";
-// 					params["input_services"] = "Silver";
-// 					params["input_hours"] = "";
-					
-// 					break;
-// 					case "10196" : 
-// 					params["type"] = "arrival";
-// 					params["input_location_id"] = "10196";
-// 					params["input_service_id"] = "CAT11";
-// 					params["input_location"] = "Meet%20and%20Greet%20Service";
-// 					params["input_services"] = "Meet%20%26%20Greet";
-// 					params["input_hours"] = "";
-					
-// 					break;
-// 				}
-// 			}
-// 			else if(item == "date")
-// 			{
-// 				newParams = "input_date";
-// 				newValue = moment(newValue, "MM/DD/YYYY").format("DD MMM YYYY");
-// 				params[newParams] = newValue;
-// 			}
-// 		}
-// 	});
-// 	if(!jQuery.isEmptyObject(params)){
-// 		for (propertyName in params) {
-// 			selections.push(propertyName + "=" + params[propertyName]);
-// 		}	
-// 		var paramUrl = "?" + selections.join("&");
-// 	}
+// $("#bookNow,#closeStopModal").click(function() {
 // 	if($('#location').val() == "dallas"){
 // 		window.location.href = "https://www.allwaysvip.com/dfw-booking";
-// 	}else if($('#location').val() == "10349"){
-// 		window.location.href = "https://www.allwaysvip.com/jfk-booking";
-// 	}else if($('#location').val() == "cebu"){
-// 		window.location.href = "https://www.allwaysvip.com/cebu-booking";
 // 	}else if($('#location').val() == ""){
-		
+				
 // 	}else{
-// 		window.location.href = baseUrl + paramUrl;
+		
 // 	}
 // });
+
+//BOOKER DEEPLINKING START
+$("#bookNow").click(function() {
+	var baseUrl = "https://booking.allwaysvip.com/booking";
+	var params = {};
+	var selections = [];
+	var paramUrl = "";
+	var ids = ["date", "type", "location", "City", "input_location_id", "input_service_id", "input_location", "input_services"]
+	jQuery.each(ids, function(index, item) {
+		if($('#' + item).val() != "" && $('#' + item).length > 0)
+		{
+			var newParams = item;
+			var newValue = $('#' + item).val();
+			
+			if(item == "location")
+			{
+				switch(newValue)
+				{
+					case "10211" : 
+					params["type"] = "arrival";
+					params["input_location_id"] = "10211";
+					params["input_service_id"] = "CAT64";
+					params["input_location"] = "Meet%20and%20Greet%20Service";
+					params["input_services"] = "Gold";
+					params["input_hours"] = "";
+					break;
+
+					case "10194" : //INDIA, NEW DELHI
+					params["type"] = "arrival";
+					params["input_location_id"] = "10194";
+					params["input_service_id"] = "CAT56";
+					params["input_location"] = "Guest%20Service";
+					params["input_services"] = "Silver";
+					params["input_hours"] = "";
+					break;
+
+					case "10196" : //TORONTO, CANADA
+					params["type"] = "arrival";
+					params["input_location_id"] = "10196";
+					params["input_service_id"] = "CAT11";
+					params["input_location"] = "Meet%20and%20Greet%20Service";
+					params["input_services"] = "Meet%20%26%20Greet";
+					params["input_hours"] = "";
+					break;
+				}
+			}
+			else if(item == "date")
+			{
+				newParams = "input_date";
+				newValue = moment(newValue, "MM/DD/YYYY").format("DD MMM YYYY");
+				params[newParams] = newValue;
+			}
+		}
+	});
+	if(!jQuery.isEmptyObject(params)){
+		for (propertyName in params) {
+			selections.push(propertyName + "=" + params[propertyName]);
+		}	
+		var paramUrl = "?" + selections.join("&");
+	}
+	if($('#location').val() == "dallas"){
+		window.location.href = "https://www.allwaysvip.com/dfw-booking";
+	}else if($('#location').val() == "10349"){
+		window.location.href = "https://www.allwaysvip.com/jfk-booking";
+	}else if($('#location').val() == "cebu"){
+		window.location.href = "https://www.allwaysvip.com/cebu-booking";
+	}else if($('#location').val() == ""){
+		
+	}else{
+		window.location.href = baseUrl + paramUrl;
+	}
+});
 //BOOKER DEEPLINKING END
