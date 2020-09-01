@@ -1,0 +1,60 @@
+/* BURGER MENU START
+======================*/
+.burger {height: 3em;width: 3em;position: relative;font-size: 12px;cursor: pointer;transition: 0.2s all;-webkit-tap-highlight-color: transparent;}
+.burger .burger-lines:after {left: 0;top: -1em;}
+.burger .burger-lines:before {left: 1em;top: 1em;}
+.burger:after {content: '';display: block;position: absolute;height: 150%;width: 150%;top: -25%;left: -25%;}
+.burger .burger-lines {top: 50%;margin-top: -0.125em;}
+.burger .burger-lines, .burger .burger-lines:after, .burger .burger-lines:before {pointer-events: none;display: block;content: '';width: 100%;border-radius: 0.25em;background-color: #212121;height: 0.25em;position: absolute;transform: rotate(0);}
+.burger .burger-lines:after {left: 0;top: -1em;}
+.burger .burger-lines:before {left: 1em;top: 1em;}
+.burger.burger-squeeze .burger-lines, .burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {transition: 0.2s top 0.2s, 0.1s left, 0.2s transform, 0.4s background-color 0.2s;}
+.burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {width: 2em;}
+.burger.burger-squeeze.open .burger-lines, .burger.burger-squeeze.open .burger-lines:after, .burger.burger-squeeze.open .burger-lines:before {transition: 0.2s background-color, 0.2s top, 0.2s left, 0.2s transform 0.15s;background-color: #E91E63;}
+.burger.burger-squeeze.open .burger-lines {background-color: transparent;}.burger.burger-squeeze.open .burger-lines:before, .burger.burger-squeeze.open .burger-lines:after {left: 0.5em;top: 0px;}
+.burger.burger-squeeze.open .burger-lines:before {transform: rotate(-45deg);}
+.burger.burger-squeeze.open .burger-lines:after {transform: rotate(45deg);}
+/*======================
+BURGER MENU END */
+
+/* CUSTOM BODY
+======================*/
+body.target-scheduling #SubNav-Scheduling, body.target-courses #SubNav-Courses { display: block; }
+body.target-scheduling #NavToggle-Scheduling, body.target-courses #NavToggle-Courses { color: #007dc5; }
+
+/* CUSTOM CHEKCBOX TOGGLE
+======================*/
+.xv-toggle-label:before { content: 'OFF'; position: absolute; top: 0; right: 0; width: 100%; background-color: #BDBDBD; transition: all .2s ease; }
+.xv-toggle-button:checked + .xv-toggle-label:before { right: 100%; }
+.xv-search-toggle input[type="radio"]:checked ~ .xv-search-toggle-label { color: #fff; }
+
+/* CUSTOM JQUERY DATEPICKER
+======================*/
+.ui-datepicker { margin-left: 0; }
+.ui-widget-content { -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.16); }
+.ui-widget-header { border: none!important; background: none!important; }
+.ui-widget.ui-widget-content,.ui-widget-content { border: none!important; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { border: none!important; }
+.ui-datepicker td span, .ui-datepicker td a { text-align: center!important; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { background: #007dc5!important; color: #fff!important; }
+
+/* TEXT TRUNCATION
+======================*/
+.xv-datatable-col-data, .x-app-nav-label, .xv-review-label, .xv-label {overflow: hidden; text-overflow: ellipsis;}
+.xv-label.for-card {text-overflow: clip;}
+
+/* CUSTOM LIST STYLE
+======================*/
+.xv-invite-block > ol, .xv-session-block > ol, .xv-enroll-block > ol {counter-reset: list-counter;}
+.xv-invite-block > ol > li, .xv-session-block > ol > li, .xv-enroll-block > ol > li {counter-increment: list-counter;}
+.xv-invite-block > ol > li::before {content: counter(list-counter);position: absolute;top: 16px;left: 8px;color: #a3a3a3;font-weight: bold;}
+.xv-session-block > ol > li::before {content: '0' counter(list-counter);position: absolute;top: 16px;left: 8px;color: #a3a3a3;font-weight: bold;}
+.xv-enroll-block > ol > li::before {content: '0' counter(list-counter);position: absolute;top: 28px;left: 24px;color: #a3a3a3;font-weight: bold;font-size: 24px;}
+.xv-enroll-block > ol > li:nth-child(n+10)::before {content: counter(list-counter);}
+
+@media only screen and (max-width: 1025px) {
+    body.target-scheduling #SubNav-Scheduling, body.target-courses #SubNav-Courses { display: flex; }
+    .x-nav-menu-group:last-child { padding-bottom: 80px; }
+}
