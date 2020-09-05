@@ -32,5 +32,5 @@ ol.x-proj-list > li:nth-child(n+100)::before {content: counter(list-counter);}
 /* CUSTOM STYLES
 ======================*/
 @media only screen and (max-width: 1024px) {
-    .x-tab-link:last-child { margin-right: 64px; }
+    .x-tab-link:last-child::after { content: '';width: 64px;height: 20px;position: absolute;top: 0;right: -64px; }
 }
