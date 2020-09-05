@@ -28,3 +28,9 @@ ol.x-proj-list > li:nth-child(n+100)::before {content: counter(list-counter);}
 ======================*/
 .x-smallprint { overflow: hidden; text-overflow: ellipsis; }
 .x-avatar-link.for-acc:hover > .x-avatar-upload { margin-bottom: 0; }
+
+/* CUSTOM STYLES
+======================*/
+@media only screen and (max-width: 1024px) {
+    .x-tab-link:last-child { margin-right: 64px; }
+}
