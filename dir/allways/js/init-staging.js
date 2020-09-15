@@ -85,10 +85,6 @@ $('#slider-text').slick({
 });
 // CUSTOM SLIDER END
 
-$('#date').datepicker({
-	minDate: -1
-});
-
 //DATE POPUP BG START (IBE)
 $('#date').bind('focus', function(){
 	$(this).addClass("xa-active");
@@ -100,7 +96,7 @@ $('#date').bind('blur', function(){
 	$('.a-booker-overlay').addClass("xa-hide");
 	$('.a-booker-label').addClass("xa-hide");
 });
-$('#date').datepicker({ dateFormat: 'dd-M-yy' });
+$('#date').datepicker({ dateFormat: 'dd-M-yy', minDate: -1 });
 //DATE POPUP BG END
 
 //BOOKER DEEPLINKING START (IBE)
