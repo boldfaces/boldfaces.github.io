@@ -113,6 +113,8 @@ $("#bookNow").click(function() {
 		alert("Booking information insufficient, please specify a Location.");
 	}else if($('#date').val() == ""){
 		alert("Booking information insufficient, please specify a Date.");
+	}else if($('#date').val() != "" && $('#location').val() == ""){
+		alert("No information provided, please specify both date and location to begin.");
 	}else{
 		
 	}
