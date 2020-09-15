@@ -105,16 +105,16 @@ $("#bookNow").click(function() {
 	var date = $("#date").val();
 	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
 
-	if($('#location').val() != "" && $('#date').val() != ""){
+	if($('#location').val() != "YYZ" && $('#date').val() != ""){
 		window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
-	}else if($('#location').val() == "YYZ" && $('#date').val() != ""){
-		window.location.href = "https://www.allwaysvip.com/toronto-booking";
 	}else if($('#location').val() == "YYZ"){
 		window.location.href = "https://www.allwaysvip.com/toronto-booking";
 	}else if($('#location').val() == ""){
 		alert("Booking information insufficient, please specify a Location.");
-	}else{
+	}else if($('#date').val() == ""){
 		alert("Booking information insufficient, please specify a Date.");
+	}else{
+		
 	}
 });
 //BOOKER DEEPLINKING END
