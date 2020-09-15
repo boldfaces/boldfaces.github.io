@@ -105,16 +105,28 @@ $("#bookNow").click(function() {
 	var date = $("#date").val();
 	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
 
-	if($('#location').val() != "YYZ" && $('#date').val() != ""){
-		window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
+	// if($('#location').val() != "YYZ" && $('#date').val() != ""){
+	// 	window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
+	// }else if($('#location').val() == "YYZ" && $('#date').val() != ""){
+	// 	window.location.href = "https://www.allwaysvip.com/toronto-booking";
+	// }else if($('#location').val() == ""){
+	// 	alert("Booking information insufficient, please specify a Location.");
+	// }else if($('#date').val() == ""){
+	// 	alert("Booking information insufficient, please specify a Date.");
+	// }else{
+		
+	// }
+
+	if($('#location').val() == "" && $('#date').val() == ""){
+		alert("Please specify both location and date to begin.");
+	}else if($('#location').val() == "" && $('#date').val() != ""){
+		alert("Booking information insufficient, please specify a Location.");
+	}else if($('#date').val() == "" && $('#location').val() != ""){
+		alert("Booking information insufficient, please specify a Date.");
 	}else if($('#location').val() == "YYZ" && $('#date').val() != ""){
 		window.location.href = "https://www.allwaysvip.com/toronto-booking";
-	}else if($('#location').val() == ""){
-		alert("Booking information insufficient, please specify a Location.");
-	}else if($('#date').val() == ""){
-		alert("Booking information insufficient, please specify a Date.");
-	}else if($('#date').val() != "" && $('#location').val() == ""){
-		alert("No information provided, please specify both date and location to begin.");
+	}else if($('#location').val() == "YYZ" && $('#date').val() != ""){
+		window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
 	}else{
 		
 	}
