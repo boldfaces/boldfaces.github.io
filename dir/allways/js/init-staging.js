@@ -109,6 +109,8 @@ $("#bookNow").click(function() {
 		window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
 	}else if($('#location').val() == ""){
 		alert("Booking information insufficient, please specify a Location.");
+	}else if($('#location').val() == "YYZ"){
+		window.location.href = "https://www.allwaysvip.com/toronto-booking";
 	}else{
 		alert("Booking information insufficient, please specify a Date.");
 	}
