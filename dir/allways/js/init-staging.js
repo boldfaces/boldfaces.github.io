@@ -85,7 +85,11 @@ $('#slider-text').slick({
 });
 // CUSTOM SLIDER END
 
-//DATE POPUP BG START
+$('#date').datepicker({
+	minDate: -1
+});
+
+//DATE POPUP BG START (IBE)
 $('#date').bind('focus', function(){
 	$(this).addClass("xa-active");
 	$('.a-booker-overlay').removeClass("xa-hide");
@@ -96,45 +100,21 @@ $('#date').bind('blur', function(){
 	$('.a-booker-overlay').addClass("xa-hide");
 	$('.a-booker-label').addClass("xa-hide");
 });
-//DATE POPUP BG END
-
-$('#date').datepicker();
-
-$("#bookNow,#closeStopModal").click(function() {
-	if($('#location').val() == "dallas"){
-		window.location.href = "https://www.allwaysvip.com/dfw-booking";
-	}else if($('#location').val() == ""){
-				
-	}else{
-		
-	}
-});
-//DATE POPUP BG START (IBE)
-// $('#date').bind('focus', function(){
-// 	$(this).addClass("xa-active");
-// 	$('.a-booker-overlay').removeClass("xa-hide");
-// 	$('.a-booker-label').removeClass("xa-hide");
-// });
-// $('#date').bind('blur', function(){
-// 	$(this).removeClass("xa-active");
-// 	$('.a-booker-overlay').addClass("xa-hide");
-// 	$('.a-booker-label').addClass("xa-hide");
-// });
-// $('#date').datepicker({ dateFormat: 'dd-M-yy' });
+$('#date').datepicker({ dateFormat: 'dd-M-yy' });
 //DATE POPUP BG END
 
 //BOOKER DEEPLINKING START (IBE)
-// $("#bookNow").click(function() {
-// 	var loc = $("#location").val();
-// 	var date = $("#date").val();
-// 	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
+$("#bookNow").click(function() {
+	var loc = $("#location").val();
+	var date = $("#date").val();
+	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
 
-// 	if($('#location').val() != "" && $('#date').val() != ""){
-// 		window.location.href = "https://ibeuat.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
-// 	}else if($('#location').val() == ""){
-//		alert("Booking information insufficient, please specify a Location.");
-// 	}else{
-// 		alert("Booking information insufficient, please specify a Date.");
-// 	}
-// });
+	if($('#location').val() != "" && $('#date').val() != ""){
+		window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
+	}else if($('#location').val() == ""){
+		alert("Booking information insufficient, please specify a Location.");
+	}else{
+		alert("Booking information insufficient, please specify a Date.");
+	}
+});
 //BOOKER DEEPLINKING END
