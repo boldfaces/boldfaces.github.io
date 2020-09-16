@@ -177,6 +177,8 @@ $("#bookNow").click(function() {
 		window.location.href = "https://www.allwaysvip.com/jfk-booking";
 	}else if($('#location').val() == "cebu"){
 		window.location.href = "https://www.allwaysvip.com/cebu-booking";
+	}else if($('#location').val() == "YYZ"){
+		window.location.href = "https://www.allwaysvip.com/toronto-booking";
 	}else if($('#location').val() == ""){
 		
 	}else{
