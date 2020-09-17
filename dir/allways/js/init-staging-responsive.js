@@ -100,32 +100,43 @@ $('#date').datepicker({ dateFormat: 'dd-M-yy', minDate: -1 });
 //DATE POPUP BG END
 
 //BOOKER DEEPLINKING START (IBE)
-$("#bookNow").click(function() {
-	var loc = $("#location").val();
-	var date = $("#date").val();
-	var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
-
-	if($('#location').val() == "" && $('#date').val() == ""){
-		alert("Please specify both location and date to begin.");
-	}else if($('#location').val() == "" && $('#date').val() != ""){
-		alert("Booking information insufficient, please specify a Location.");
-	}else if($('#date').val() == "" && $('#location').val() != ""){
-		alert("Booking information insufficient, please specify a Date.");
-	}else if($('#location').val() == "YYZ" && $('#date').val() != ""){
-		window.location.href = "https://www.allwaysvip.com/toronto-booking";
-	}else if($('#location').val() != "YYZ" && $('#date').val() != ""){
-		window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
-	}else{
+$(window).on("resize",function(){  
+	if($(window).width()>480){
+		$("#bookNow").click(function() {
+			var loc = $("#location").val();
+			var date = $("#date").val();
+			var dateFormatted = moment(date, 'DD-MMM-YYYY').format('YYYY-MM-DD');
 		
-	}
-
-	$(window).on("resize",function(){  
-		if($(window).width()>480){
-			   
-		}else{
-			
-		}   
-	 }
-
+			if($('#location').val() == "" && $('#date').val() == ""){
+				alert("Please specify both location and date to begin.");
+			}else if($('#location').val() == "" && $('#date').val() != ""){
+				alert("Booking information insufficient, please specify a Location.");
+			}else if($('#date').val() == "" && $('#location').val() != ""){
+				alert("Booking information insufficient, please specify a Date.");
+			}else if($('#location').val() == "YYZ" && $('#date').val() != ""){
+				window.location.href = "https://www.allwaysvip.com/toronto-booking";
+			}else if($('#location').val() != "YYZ" && $('#date').val() != ""){
+				window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
+			}else{
+				
+			}
+		
+		});
+	}else{
+		$("#bookNow").click(function() {
+			var loc = $("#location").val();
+		
+			if($('#location').val() == ""){
+				alert("Please specify both location to begin.");
+			}else if($('#location').val() == "YYZ" && $('#date').val() != ""){
+				window.location.href = "https://www.allwaysvip.com/toronto-booking";
+			}else if($('#location').val() != "YYZ" && $('#date').val() != ""){
+				window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
+			}else{
+				
+			}
+		
+		});
+	}   
 });
 //BOOKER DEEPLINKING END
