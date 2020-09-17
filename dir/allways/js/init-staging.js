@@ -119,13 +119,5 @@ $("#bookNow").click(function() {
 		
 	}
 
-	$(window).on("resize",function(){  
-		if($(window).width()>480){
-			   
-		}else{
-			
-		}   
-	 }
-
 });
 //BOOKER DEEPLINKING END
