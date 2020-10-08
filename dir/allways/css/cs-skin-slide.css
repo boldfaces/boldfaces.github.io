@@ -132,8 +132,7 @@ div.cs-skin-slide::before {
 
 @media only screen and (max-width: 415px) {
 	.cs-skin-slide > span {
-		height: 32px;
-		line-height: 32px;
-		transition: text-indent 0.3s, opacity 0.3s;
+		height: 28px;
+		line-height: 28px;
 	}
 }
