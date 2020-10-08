@@ -7,8 +7,8 @@
 .a-hero-span:before {content: '';position: absolute;z-index: -1;top: 50%;left: -32px;right: -32px;bottom: 0;background-color: #16C4CF;}
 .a-hero-span.xa-section:before {top: 0;left: -32px;right: 72%;}
 
+.a-embed > iframe { width: 1px;min-width: 100%;min-height: 1380px;border: 0; }
 
-iframe { width: 1px;min-width: 100%;min-height: 1380px;border: 0; }
 @media only screen and (max-width: 1600px) {
   .a-sidebar-menu-link {padding: 14px 0;font-size: 28px;line-height: 32px;}
   .a-booker {margin-right: 0;padding: 16px;}
