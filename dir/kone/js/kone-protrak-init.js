@@ -4,6 +4,12 @@ $("#page-action, #close-action").click(function() {
     $(".x-overlay").fadeToggle();
 });
 
+// FOR SHOWING & HIDING OF TIMELINE
+$("#TimelineToggle").click(function() {
+	$("#TimelineSidebar").toggleClass("is-hide");
+  $("#Master").toggleClass("is-reset");
+});
+
 //TOGGLES THE SAVE N GET APPROVAL DIALOG
 $("#save-action").click(function() {
 	$(".x-alert").removeClass("for-hide");
