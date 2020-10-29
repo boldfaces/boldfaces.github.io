@@ -18,8 +18,8 @@ $("#CloseSearch").click(function() {
 
 // APP NAV JS SCRIPT START
 $(".x-app-nav-link").click(function() {
-	$(this).siblings(".x-sub-app-nav-list").slideToggle(200);
 	$(".x-sub-app-nav-list").hide(200);
+	$(this).siblings(".x-sub-app-nav-list").slideToggle(200);
 });
 // $(".target-reset #NavToggle-Scheduling").click(function() {
 // 	$("#SubNav-Scheduling").slideToggle();
