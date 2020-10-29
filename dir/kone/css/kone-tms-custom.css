@@ -19,8 +19,8 @@ BURGER MENU END */
 
 /* CUSTOM BODY
 ======================*/
-body.target-scheduling #SubNav-Scheduling, body.target-courses #SubNav-Courses { display: block; }
-body.target-scheduling #NavToggle-Scheduling, body.target-courses #NavToggle-Courses { color: #007dc5; }
+body.target-scheduling #SubNav-Scheduling, body.target-courses #SubNav-Courses, body.target-train #SubNav-Train { display: block; }
+body.target-scheduling #NavToggle-Scheduling, body.target-courses #NavToggle-Courses, body.target-train #NavToggle-Train { color: #007dc5; }
 
 /* CUSTOM CHEKCBOX TOGGLE
 ======================*/
