@@ -17,20 +17,24 @@ $("#CloseSearch").click(function() {
 // MOBILE SEARCH TOGGLE JS SCRIPT END
 
 // APP NAV JS SCRIPT START
-$(".target-reset #NavToggle-Scheduling").click(function() {
-	$("#SubNav-Scheduling").slideToggle();
+$(".x-app-nav-link").click(function() {
+	$(this).siblings(".x-sub-app-nav-list").slideToggle(200);
+	$(".x-sub-app-nav-list").hide(200);
 });
-$(".target-reset #NavToggle-Courses").click(function() {
-    $("#SubNav-Courses").slideToggle();
-});
-$(".target-courses #NavToggle-Scheduling").click(function() {
-    $("#SubNav-Scheduling").slideToggle();
-    $("#SubNav-Scheduling").css("z-index", "2");
-});
-$(".target-scheduling #NavToggle-Courses").click(function() {
-    $("#SubNav-Courses").slideToggle();
-    $("#SubNav-Courses").css("z-index", "2");
-});
+// $(".target-reset #NavToggle-Scheduling").click(function() {
+// 	$("#SubNav-Scheduling").slideToggle();
+// });
+// $(".target-reset #NavToggle-Courses").click(function() {
+//     $("#SubNav-Courses").slideToggle();
+// });
+// $(".target-courses #NavToggle-Scheduling").click(function() {
+//     $("#SubNav-Scheduling").slideToggle();
+//     $("#SubNav-Scheduling").css("z-index", "2");
+// });
+// $(".target-scheduling #NavToggle-Courses").click(function() {
+//     $("#SubNav-Courses").slideToggle();
+//     $("#SubNav-Courses").css("z-index", "2");
+// });
 // APP NAV JS SCRIPT END
 
 //CHECKBOX FOR DATATABLE START
