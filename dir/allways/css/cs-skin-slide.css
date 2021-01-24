@@ -51,8 +51,8 @@ div.cs-skin-slide::before {
 
 .cs-skin-slide .cs-options {
 	background: transparent;
-	width: 70%;
-	padding: 24px 0;
+	width: 80%;
+	padding: 16px 0;
 	top: 50%;
 	left: 50%;
 	transform: translate3d(-50%,-50%,0);
@@ -90,11 +90,10 @@ div.cs-skin-slide::before {
 } /* more options need more delay declaration */
 
 .cs-skin-slide .cs-options li span {
-	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
-	font-size: 50%;
-	padding: 4px 0;
+	font-size: 16px;
+	padding: 2px 0;
 }
 
 .cs-skin-slide .cs-options li span:hover,
