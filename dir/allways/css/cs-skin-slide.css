@@ -22,7 +22,7 @@ div.cs-skin-slide::before {
 	box-shadow: 0 8px 16px 0 rgba(38, 34, 41, .24);
 }
 .cs-loc.cs-skin-slide.cs-active::before {
-	transform: scale3d(1,7,1);
+	transform: scale3d(1.2,7,1);
 }
 
 .cs-skin-slide > span {
@@ -51,7 +51,7 @@ div.cs-skin-slide::before {
 
 .cs-skin-slide .cs-options {
 	background: transparent;
-	width: 80%;
+	width: 100%;
 	padding: 16px 0;
 	top: 50%;
 	left: 50%;
