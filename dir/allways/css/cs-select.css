@@ -90,3 +90,9 @@ div.cs-active {
 .cs-select ul li.cs-focus span {
 	background-color: #ddd;
 }
+
+@media only screen and (max-width: 1024px) {
+	.cs-select ul {
+		max-height: 320px;
+	}
+}

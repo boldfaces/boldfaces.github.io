@@ -128,10 +128,17 @@ div.cs-skin-slide::before {
 .icon-transit span::before {
 	content: '\e915';
 }
-
+@media only screen and (max-width: 1024px) {
+	.cs-loc.cs-skin-slide.cs-active::before {
+		transform: scale3d(1.2,10,1);
+	}
+}
 @media only screen and (max-width: 415px) {
 	.cs-skin-slide > span {
 		height: 28px;
 		line-height: 28px;
+	}
+	.cs-loc.cs-skin-slide.cs-active::before {
+		transform: scale3d(1.2,13,1);
 	}
 }
