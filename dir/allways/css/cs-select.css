@@ -93,6 +93,6 @@ div.cs-active {
 
 @media only screen and (max-width: 1024px) {
 	.cs-select ul {
-		max-height: 320px;
+		max-height: none;
 	}
 }
