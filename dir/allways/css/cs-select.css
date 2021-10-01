@@ -78,6 +78,9 @@ div.cs-active {
 	margin: 0;
 	padding: 0 24px 0 0;
 	width: 100%;
+}
+
+.cs-options { 
 	max-height: 280px;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -92,7 +95,7 @@ div.cs-active {
 }
 
 @media only screen and (max-width: 1024px) {
-	.cs-select ul {
+	.cs-options {
 		max-height: none;
 	}
 }
