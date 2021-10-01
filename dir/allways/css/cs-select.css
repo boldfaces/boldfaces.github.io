@@ -82,8 +82,8 @@ div.cs-active {
 
 .cs-options { 
 	max-height: 280px;
-	overflow-y: auto;
-	overflow-x: hidden;
+	overflow-y: auto!important;
+	overflow-x: hidden!important;
 }
 
 .cs-select ul span {
