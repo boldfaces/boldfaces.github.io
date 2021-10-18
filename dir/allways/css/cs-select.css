@@ -96,6 +96,6 @@ div.cs-active {
 
 @media only screen and (max-width: 1024px) {
 	.cs-options {
-		max-height: none;
+		max-height: 260px;
 	}
 }
