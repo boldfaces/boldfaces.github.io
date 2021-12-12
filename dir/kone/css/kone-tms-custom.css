@@ -52,7 +52,7 @@ body.target-scheduling #NavToggle-Scheduling, body.target-courses #NavToggle-Cou
 .xv-invite-block > ol > li::before {content: counter(list-counter);position: absolute;top: 16px;left: 8px;color: #a3a3a3;font-weight: bold;}
 .xv-session-block > ol > li::before {content: '0' counter(list-counter);position: absolute;top: 16px;left: 8px;color: #a3a3a3;font-weight: bold;}
 .xv-enroll-block > ol > li::before {content: '0' counter(list-counter);position: absolute;top: 28px;left: 24px;color: #a3a3a3;font-weight: bold;font-size: 24px;}
-ol.xv-datatable-list.for-count > li::before {content: counter(list-counter);position: absolute;z-index:10;top: 16px;left: 8px;color: #a3a3a3;font-weight: bold;}
+ol.xv-datatable-list.for-count > li::before {content: counter(list-counter);position: absolute;z-index:10;top: 50%;left: 16px;color: #a3a3a3;transform: translateY(-50%);}
 .xv-enroll-block > ol > li:nth-child(n+10)::before {content: counter(list-counter);}
 
 @media only screen and (max-width: 1025px) {
