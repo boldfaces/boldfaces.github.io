@@ -21,7 +21,7 @@ function addCountries(whereto) {
 		   //navigationPosition: 'left',
 		   //navigationTooltips: ['Home', 'What we do', 'Services', 'More'],
 		   touchSensitivity: 8,
-		   normalScrollElements: '.x-overlist'
+		   normalScrollElements: '.x-overlist, .cs-options'
 	  });
 	}
 	addCountries('#countries');
@@ -112,10 +112,11 @@ function addCountries(whereto) {
 		  alert("Booking information insufficient, please specify a Location.");
 	  }else if($('#date').val() == "" && $('#location').val() != ""){
 		  alert("Booking information insufficient, please specify a Date.");
-	  }else if($('#location').val() == "YYZ" && $('#date').val() != ""){
-		  window.location.href = "https://www.allwaysvip.com/toronto-booking";
-	  }else if($('#location').val() != "YYZ" && $('#date').val() != ""){
+	  }else if($('#location').val() != "" && $('#date').val() != ""){
 		  window.location.href = "https://booking.allwaysvip.com?airport=" + loc + "&checkin=" + dateFormatted;
+    }else if($('#location').val() == "HKG"){
+      window.alert('We are enhancing our website to serve you better. In a short moment, you will be redirected to our new portal to explore and book ALLWAYS services at Hong Kong International Airport. Click here if you are not redirected, or to visit our new website immediately.');
+      window.location.href='https://hkia.allwaysvip.com/';
 	  }else{
 		  
 	  }
