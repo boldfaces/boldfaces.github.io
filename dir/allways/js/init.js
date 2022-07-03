@@ -112,7 +112,7 @@ function addCountries(whereto) {
       $('#hkgModal').removeClass("xa-hide");
       window.setTimeout(function () {
         location.href = "https://hkia.allwaysvip.com";
-      }, 3000);
+      }, 5000);
 	  }else if($('#location').val() == "" && $('#date').val() != ""){
 		  alert("Booking information insufficient, please specify a Location.");
 	  }else if($('#date').val() == "" && $('#location').val() != ""){
