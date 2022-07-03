@@ -110,6 +110,9 @@ function addCountries(whereto) {
 		  alert("Please specify both location and date to begin.");
 	  }else if($('#location').val() == "HKG"){
       $('#hkgModal').removeClass("xa-hide");
+      window.setTimeout(function () {
+        location.href = "https://hkia.allwaysvip.com";
+      }, 3000);
 	  }else if($('#location').val() == "" && $('#date').val() != ""){
 		  alert("Booking information insufficient, please specify a Location.");
 	  }else if($('#date').val() == "" && $('#location').val() != ""){
