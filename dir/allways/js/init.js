@@ -109,8 +109,7 @@ function addCountries(whereto) {
 	  if($('#location').val() == "" && $('#date').val() == ""){
 		  alert("Please specify both location and date to begin.");
 	  }else if($('#location').val() == "HKG"){
-      window.alert('We are enhancing our website to serve you better. In a short moment, you will be redirected to our new portal to explore and book ALLWAYS services at Hong Kong International Airport. Click here if you are not redirected, or to visit our new website immediately.');
-      window.location.href='https://hkia.allwaysvip.com/';
+      $('#hkgModal').removeClass("xa-hide");
 	  }else if($('#location').val() == "" && $('#date').val() != ""){
 		  alert("Booking information insufficient, please specify a Location.");
 	  }else if($('#date').val() == "" && $('#location').val() != ""){
@@ -124,3 +123,6 @@ function addCountries(whereto) {
   });
   //BOOKER DEEPLINKING END
   
+  $("#closehkgModal").click(function() {
+    $('#hkgModal').addClass("xa-hide");
+  });
