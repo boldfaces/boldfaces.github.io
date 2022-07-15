@@ -21,7 +21,7 @@ function addCountries(whereto) {
 		   //navigationPosition: 'left',
 		   //navigationTooltips: ['Home', 'What we do', 'Services', 'More'],
 		   touchSensitivity: 8,
-		   normalScrollElements: '.x-overlist, .cs-options'
+		   normalScrollElements: '.x-overlist, .cs-options, .x-alert-body'
 	  });
 	}
 	addCountries('#countries');
